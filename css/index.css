@@ -5,16 +5,18 @@ body{
   justify-content: space-around;
   align-items: center;
   margin: 0;
+  font-size: 2em;
 }
 
 .screen-container{
   height: 70vh;
   width: 65vw;
   background: #000;
+  position: relative;
+  overflow: hidden;
 }
 
 .trigger-animation{
-  font-size: 2em;
   cursor: pointer;
   background: #ddd;
   padding: 5px 20px;
@@ -24,4 +26,20 @@ body{
 
 .trigger-animation:hover{
   background: #eee;
+}
+
+.animated-emoji{
+  position: absolute;
+  top: 120%;
+  height: 2em;
+  width: 2em;
+}
+
+@keyframes move {
+  from {
+    top : 120%;
+  }
+  to {
+    top : -20%;
+  }
 }
