@@ -35,15 +35,6 @@ body{
   width: 2em;
 }
 
-@keyframes move {
-  from {
-    top : 120%;
-  }
-  to {
-    top : -20%;
-  }
-}
-
 @keyframes wave {
   from {
     top : 120%;

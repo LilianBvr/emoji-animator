@@ -22,7 +22,7 @@ class EmojiAnimator {
       elem.className = "animated-emoji";
       elem.innerHTML = emoji;
       elem.style.left = Math.random()*100+"%";
-      elem.style.animation = this.getRandomAnimation()+" "+this.duration+"ms ease-in-out"
+      elem.style.animation = "wave "+this.duration+"ms ease-in-out"
       this.collection.push(elem);
     }
   }
@@ -36,9 +36,6 @@ class EmojiAnimator {
     this.collection.shift();
   }
 
-  getRandomAnimation() {
-    return Math.random() < .6 ? "move" : "wave";
-  }
 }
 
 export function createAnimator({duration, qty, container}) {
