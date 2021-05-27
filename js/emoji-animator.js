@@ -22,7 +22,7 @@ class EmojiAnimator {
       elem.className = "animated-emoji";
       elem.innerHTML = emoji;
       elem.style.left = Math.random()*100+"%";
-      elem.style.animation = "move "+this.duration+"ms"
+      elem.style.animation = this.getRandomAnimation()+" "+this.duration+"ms ease-in-out"
       this.collection.push(elem);
     }
   }
@@ -32,11 +32,12 @@ class EmojiAnimator {
   }
 
   removeEmoji(elem, delay) {
-    setTimeout(()=>{
-      if(elem)
-        elem.remove()
-    }, delay+this.duration);
+    setTimeout(()=>{ if(elem) elem.remove(); }, delay+this.duration);
     this.collection.shift();
+  }
+
+  getRandomAnimation() {
+    return Math.random() < .6 ? "move" : "wave";
   }
 }
 

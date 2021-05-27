@@ -43,3 +43,23 @@ body{
     top : -20%;
   }
 }
+
+@keyframes wave {
+  from {
+    top : 120%;
+    transform: translateX(200%);
+  }
+  25% {
+    transform: translateX(-200%);
+  }
+  40% {
+    transform: translateX(200%);
+  }
+  75% {
+    transform: translateX(-220%);
+  }
+  to {
+    top : -20%;
+    transform: translateX(0);
+  }
+}
