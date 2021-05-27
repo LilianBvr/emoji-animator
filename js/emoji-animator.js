@@ -4,6 +4,7 @@ class EmojiAnimator {
     this.qty = qty;
     this.container = container;
     this.limit = limit;
+    container.classList.add("emoji-animation-container");
   }
 
   //Creates a set of passed emoji and animate them

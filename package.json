@@ -1,0 +1,19 @@
+{
+  "name": "emoji-animator",
+  "version": "1.0.0",
+  "description": "A simple js lib that allows you to animate emojis in a container !",
+  "main": "js/emoji-animator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LilianBvr/emoji-animator.git"
+  },
+  "author": "lilian_bvr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LilianBvr/emoji-animator/issues"
+  },
+  "homepage": "https://github.com/LilianBvr/emoji-animator#readme"
+}
