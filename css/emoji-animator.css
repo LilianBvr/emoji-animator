@@ -33,6 +33,8 @@ body{
   top: 120%;
   height: 2em;
   width: 2em;
+  mix-blend-mode: unset;
+  pointer-events: none;
 }
 
 @keyframes wave {

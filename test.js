@@ -10,7 +10,8 @@ function main() {
   const params = {
     container: document.querySelector(".screen-container"),
     duration: 3000,
-    qty: 30
+    qty: 5,
+    limit: 15
   }
   var animator = createAnimator(params);
 
