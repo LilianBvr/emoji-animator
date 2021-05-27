@@ -1,0 +1,27 @@
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  font-size: 2em;
+}
+
+.screen-container{
+  height: 70vh;
+  width: 65vw;
+  background: #000;
+}
+
+.trigger-animation{
+  cursor: pointer;
+  background: #ddd;
+  padding: 5px 20px;
+  border-radius: 10px;
+  transition: background .3s ease;
+}
+
+.trigger-animation:hover{
+  background: #eee;
+}

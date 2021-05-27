@@ -1,4 +1,4 @@
-import {createAnimator} from "./js/emoji-animator.js";
+import {createAnimator} from "./src/js/emoji-animator.js";
 
 window.onload = () => {
   main();
